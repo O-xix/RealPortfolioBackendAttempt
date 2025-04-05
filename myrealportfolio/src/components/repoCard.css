@@ -1,0 +1,41 @@
+.repo-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create exactly 4 columns */
+    gap: 1em; /* Add spacing between grid items */
+    padding: 1em; /* Add padding around the grid */
+}
+
+.repo-card {
+    display: flex;
+    flex-direction: column; /* Stack content vertically inside each card */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #ae5d5d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.repo-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slightly lift the card */
+}
+
+.repo-card h2 {
+    margin: 0;
+    font-size: 1.2em;
+    flex: 1; /* Allow the title to take up space */
+}
+
+.repo-card p {
+    margin: 0 1em;
+    flex: 2; /* Allow the description to take up more space */
+}
+
+.repo-card a {
+    flex-shrink: 0; /* Prevent the link from shrinking */
+    text-decoration: none;
+    color: #646cff;
+    font-weight: bold;
+}

@@ -1,6 +1,6 @@
+import './repoCard.css'; // Assuming you have some CSS for styling the card
 
-
-function repoCard({ repo }) {
+function RepoCard({ repo }) {
   return (
     <div className="repo-card">
       <h2>{repo.name}</h2>
@@ -11,3 +11,5 @@ function repoCard({ repo }) {
     </div>
   );
 }
+
+export default RepoCard;
