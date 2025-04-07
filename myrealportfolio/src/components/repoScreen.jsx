@@ -38,7 +38,7 @@ function RepoScreen() {
       <div className="repo-card-container">
         {repos.length > 0 ? (
           repos.map((repo) => (
-            <RepoCard key={repo.id} repo={repo} />
+            <RepoCard repo={repo} />
           ))
         ) : (
           <p>No repositories found.</p>
